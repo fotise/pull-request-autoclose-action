@@ -2,9 +2,12 @@ name: 'Your name here'
 description: 'Provide a description here'
 author: 'Your name or organization here'
 inputs:
-  milliseconds:
-    description: 'input description here'
-    default: 'default value if applicable'
+  github-token:
+    description: 'GitHub Token'
+    required: true
+  message:
+    description: 'Message displayed in pr comment'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
